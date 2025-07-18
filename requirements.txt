@@ -1,0 +1,68 @@
+# Web and APIs
+requests
+python-dotenv
+fastapi
+flask
+gunicorn
+
+# Utils and CLI
+tqdm
+pyyaml
+invoke
+click
+python-slugify
+
+# Game development
+pygame
+pgzero
+guizero
+
+# Jupyter and visualization
+jupyterlab
+ipykernel
+ipywidgets
+matplotlib
+seaborn
+plotly
+plotly-express
+seaborn
+dash
+panel
+hvplot
+
+# Data analysis
+numpy
+pandas
+scikit-learn
+scipy
+processing-py
+
+# Computer vision
+opencv-python
+
+# Databases
+redis
+duckdb
+sqlalchemy
+
+
+# Geographic data
+geopandas
+contextily
+folium
+shapely
+pyproj
+cenpy
+
+# Data handling & processing
+openpyxl
+pyarrow
+dask
+beautifulsoup4
+fastparquet
+
+
+# Utilities
+joblib
+pytest
+black

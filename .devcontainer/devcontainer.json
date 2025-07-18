@@ -1,0 +1,46 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Python 3",
+
+
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	//"features": {
+	//	"ghcr.io/devcontainers/features/desktop-lite:1": {
+	//		"password" : "code4life"
+	//	}
+	//},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	//"forwardPorts":  [6080, 5901],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// However, this does seem to get injected into the built container 
+	// so you may want to exclude it, and define it in the devcontainer.json for 
+	// the devcontainer you are using.
+	
+	"postCreateCommand": "pip3 install --user -r requirements.txt",
+
+	"customizations": {
+	    "codespaces": {
+	      "openFiles": []
+	    },
+	    "vscode": {
+	      "extensions": [
+	        "ms-toolsai.jupyter",
+	        "ms-python.python",
+	        "ms-python.debugpy"
+	      ]
+	    },
+		"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python"
+		}
+  	}
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
